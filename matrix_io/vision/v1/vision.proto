@@ -353,6 +353,11 @@ message RectangularDetection {
   uint64 tracking_id = 8;
   // UUID (v4) identifies this unique rectangular detection
   string uuid = 11;
+  // Rect event UTC timestamp (seconds and nanos) 
+  // see google/protobuf/timestamp.proto
+  google.protobuf.Timestamp timestamp = 13;
+
+
 }
 
 // Collection of images. For some applications the
